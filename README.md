@@ -9,8 +9,8 @@
 <br>
 <br>
 
-[![Русский](https://img.shields.io/badge/🇷🇺_Русский-README-blue?style=flat-square)](README.md)
-[![English](https://img.shields.io/badge/🇬🇧_English-README_EN.md-blue?style=flat-square)](README_EN.md)
+[![Русский](https://img.shields.io/badge/Русский-README-blue?style=flat-square)](README.md)
+[![English](https://img.shields.io/badge/English-README_EN.md-blue?style=flat-square)](README_EN.md)
 
 </div>
 
