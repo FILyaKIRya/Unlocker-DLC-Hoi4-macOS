@@ -1,112 +1,112 @@
-🎮 HOI4 DLC Unlocker for macOS
-
 <div align="center">
-Platform
-Architecture
-CreamAPI
-License
 
-🇷🇺 Русский | 🇬🇧 English
+# 🎮 Hearts of Iron IV · DLC Unlocker for macOS
+
+<img src="https://img.shields.io/badge/Platform-macOS-9cf?style=for-the-badge&logo=apple" alt="macOS">
+<img src="https://img.shields.io/badge/CreamAPI-v5.3.0.0-ff69b4?style=for-the-badge" alt="CreamAPI">
+<img src="https://img.shields.io/badge/Game-Hearts_of_Iron_IV-red?style=for-the-badge&logo=steam" alt="Hearts of Iron IV">
+
+<br>
+<br>
+
+[![Русский](https://img.shields.io/badge/🇷🇺_Русский-README-blue?style=flat-square)](README.md)
+[![English](https://img.shields.io/badge/🇬🇧_English-README_EN.md-blue?style=flat-square)](README_EN.md)
 
 </div>
-📖 Описание
 
-HOI4 DLC Unlocker — это разблокировщик DLC для Hearts of Iron IV на macOS. Использует CreamAPI v5.3.0.0 для разблокировки DLC в играх, легально приобретённых в Steam.
+---
 
-⚠️ Важно: Этот инструмент предназначен только для пользователей, легально владеющих игрой в Steam.
-⚙️ Как это работает
+# 🇷🇺 Русская версия
 
-Инструмент заменяет оригинальный libsteam_api.dylib на CreamAPI, который сообщает игре, что вы владеете всеми DLC.
+## 🌟 Описание
 
-📌 Файлы контента DLC должны уже присутствовать в папке игры.
-🖥️ Поддерживаемые платформы
+> **Легальный разблокировщик DLC** для Steam-версии **Hearts of Iron IV** на macOS.  
+> Работает через **CreamAPI v5.3.0.0** — не меняет файлы игры, только подменяет библиотеку Steam.
 
-Платформа	Архитектура	Статус
-macOS 10.13+	Intel (x86_64)	✅ Поддерживается
-macOS 11+	Apple Silicon (M1/M2/M3/M4)	✅ Поддерживается
-📋 Требования
+Этот инструмент позволяет разблокировать **все DLC** в лицензионной копии Hearts of Iron IV, приобретённой в Steam.  
+Он подменяет оригинальную библиотеку `libsteam_api.dylib` на модифицированную версию CreamAPI, которая сообщает игре, что все DLC якобы уже куплены.
 
-🍎 macOS 10.13 (High Sierra) или новее
-🎯 Hearts of Iron IV (легально приобретённая в Steam)
-📦 Файлы контента DLC (необходимо получить отдельно)
-🚀 Инструкция по установке
+> ⚠️ **Важно:** Сам контент DLC (файлы `.dlc` и ассеты) должен физически находиться в папке игры. Этот инструмент только «включает» доступ к ним.
 
+---
 
-Скачайте с репозитория файлы:
+## 🔧 Как это работает
 
+1. CreamAPI перехватывает вызовы Steam API
+2. Игра «думает», что все DLC лицензионно приобретены
+3. Вы запускаете HOI4 и получаете полный доступ к DLC
 
+---
 
-cream_api.ini
+## 🙏 Благодарности
 
-libsteam_api.dylib
+- **[deadmau5](https://cs.rin.ru/forum/viewtopic.php?f=29&t=70576)** — создатель **CreamAPI**
+- **[KyLaEga](https://github.com/KyLaEga/EU4-DLC-Unlocker-macOS/tree/master)** — за предоставление файлов и основы для macOS
 
+---
 
+## 🚀 Инструкция по установке
 
-Переименуйте оригинальный файл в каталоге игры:
+### 1️⃣ Скачайте файлы
+Склонируйте репозиторий или скачайте вручную:
+- `cream_api.ini`
+- `libsteam_api.dylib`
 
+### 2️⃣ Переименуйте оригинальную библиотеку
+Перейдите в папку с игрой (обычно `~/Library/Application Support/Steam/steamapps/common/Hearts of Iron IV/`).  
+Найдите `libsteam_api.dylib` и переименуйте его в:
 
-libsteam_api.dylib  →  libsteam_api_o.dylib
+```bash
+libsteam_api_o.dylib
+```
 
+### 3️⃣ Скопируйте новые файлы
+Поместите скачанные `cream_api.ini` и `libsteam_api.dylib` в ту же папку.
 
-Скопируйте новые файлы в каталог игры и запустите игру 🎉
+### 4️⃣ Запустите игру
+Через Steam или напрямую. Если macOS попросит разрешение — откройте **«Конфиденциальность и безопасность»** и разрешите запуск библиотеки.
 
-💡 Примечание: Если macOS попросит разрешение в «Конфиденциальность и безопасность», разрешите его.
-🙏 Благодарности
+> 🧠 **Совет:** При первом запуске может появиться предупреждение Gatekeeper — нажмите «Открыть всё равно» или разрешите в настройках.
 
-Огромное спасибо KyLaEga за предоставленные файлы CreamAPI ❤️
+---
 
-<a name="-english-version"></a>
+## ✅ Требования
 
-🇬🇧 English Version
+| Компонент                | Условие                                      |
+|-------------------------|----------------------------------------------|
+| macOS                   | 10.13 (High Sierra) или новее               |
+| Hearts of Iron IV       | Лицензионная копия в Steam                   |
+| DLC-контент             | Физические файлы DLC (должны быть в папке игры) |
 
-📖 Description
+---
 
-HOI4 DLC Unlocker is a DLC unlocker for Hearts of Iron IV on macOS. It uses CreamAPI v5.3.0.0 to unlock DLCs for games legally purchased on Steam.
+## 💻 Поддерживаемые платформы
 
-⚠️ Important: This tool is intended only for users who legally own the game on Steam.
-⚙️ How It Works
+| Платформа            | Архитектура       | Статус                        |
+|----------------------|-------------------|-------------------------------|
+| macOS 10.13+         | Intel (x86_64)    | ✅ Полная поддержка           |
+| macOS 11+            | Apple Silicon (M1/M2/M3/M4) | ✅ Полная поддержка (через Rosetta 2) |
 
-The tool replaces the original libsteam_api.dylib with CreamAPI, which tells the game that you own all DLCs.
+> На Apple Silicon игра работает через Rosetta 2 — разблокировщик совместим.
 
-📌 DLC content files must already be present in the game folder.
-🖥️ Supported Platforms
+---
 
-Platform	Architecture	Status
-macOS 10.13+	Intel (x86_64)	✅ Supported
-macOS 11+	Apple Silicon (M1/M2/M3/M4)	✅ Supported
-📋 Requirements
+## ❓ Частые вопросы
 
-🍎 macOS 10.13 (High Sierra) or newer
-🎯 Hearts of Iron IV (legally purchased on Steam)
-📦 DLC content files (must be obtained separately)
-🚀 Installation Guide
+**Нужно ли отключать антивирус или SIP?**  
+Нет, CreamAPI не требует отключения системной защиты.
 
+**Бан в Steam?**  
+Инструмент не взаимодействует с аккаунтом напрямую, но используйте на свой страх и риск.
 
-Download from the repository:
+**DLC не разблокируются?**  
+Убедитесь, что файлы DLC лежат в `game/dlc/` или аналогичной папке.
 
+---
 
+## 📄 Лицензия
 
-cream_api.ini
+Проект распространяется в образовательных целях. Все права на CreamAPI принадлежат **deadmau5**.  
+Hearts of Iron IV — торговая марка **Paradox Interactive**.
 
-libsteam_api.dylib
-
-
-
-Rename the original file in the game directory:
-
-
-libsteam_api.dylib  →  libsteam_api_o.dylib
-
-
-Place the new files into the game directory and launch the game 🎉
-
-💡 Note: If macOS asks for permission in "Privacy & Security", allow it.
-🙏 Credits
-
-Huge thanks to KyLaEga for providing the CreamAPI files ❤️
-
-<div align="center">
-⭐ Если этот проект был полезен — поставьте звезду! ⭐
-
-⭐ If this project helped you — leave a star! ⭐
-</div>
+---
