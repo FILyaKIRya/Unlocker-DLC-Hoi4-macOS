@@ -85,6 +85,19 @@ Make sure the DLC files are in `game/dlc/` or a similar folder.
 
 ---
 
+## ⚠️ Known Issue
+
+**Paradox Launcher may show an error or fail to display DLCs — this is normal!**
+
+After installing the unlocker, the Paradox Launcher might:
+- fail to show installed DLCs in the list;
+- display an error like “We were unable to verify ownership of this DLC.”.
+
+**Don’t panic!** 🎯  
+Inside the actual game, **all DLCs work perfectly and are fully accessible**. The launcher simply cannot correctly read the license info from the modified Steam library — this does not affect gameplay. Launch the game directly or through the launcher (ignoring any errors) and enjoy the complete content.
+
+---
+
 ## 📄 License
 
 This project is for educational purposes only. All rights to CreamAPI belong to **deadmau5**.  
